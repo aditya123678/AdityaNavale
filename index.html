@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADITYA KISANRAO NAVALE | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="contactPopup" class="popup-overlay" style="display:none;">
+  <div class="popup-box">
+    <h3>Contact Me</h3>
+    <input id="name" placeholder="Your Name" />
+	<input id="subject" placeholder="Subject" />
+	<textarea id="message" placeholder="Message"></textarea><br>
+	<button onclick="sendEmail()">Send</button>
+	<button onclick="closeContact()">Close</button>
+   </div>
+</div>
+
+<section class="hero">
+  <img src="adi.jpeg" alt="Aditya Navale" class="avatar" />
+  <h1>Aditya Kisanrao<br><span>Navale</span></h1>
+  <p class="subtitle">*Mobile application Developer <br>*Java Developer<br> * Emerging Technologist<br></p>
+  <div class="hero-buttons">
+    <a class="btn primary">View Resume</a>
+    <a class="btn secondary" onclick="openContact()">Contact Me</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>About Me</h2>
+  <p class="card">
+    Hello! I am Aditya, a software developer interested in mobile apps, Java Developer, IoT systems, and AI/ML technologies. I enjoy learning new technologies and building practical projects that solve real-world challenges.
+  </p>
+
+  <div class="info-grid">
+    <div class="info blue">
+      <h3>Education</h3>
+      <p>Diploma<br>Of Computer Technology</p>
+    </div>
+    <div class="info green">
+      <h3>Interests</h3>
+      <p>*Mobile application Developer<br> *Java Developer<br> * Emerging Technologist<br></p>
+    </div>
+    <div class="info orange">
+      <h3>Career Goal</h3>
+      <p>To grow as a skilled software engineer and innovator</p>
+    </div>
+  </div>
+</section>
+
+<section class="section gray">
+  <h2>Skills & Expertise</h2>
+  <div class="skills">
+    <div class="skill">Programming Languages<br><span>C, C++, Java, Python, Android</span></div>
+    <div class="skill">Web Technologies<br><span>HTML, CSS, JavaScript</span></div>
+    <div class="skill">Frameworks<br><span>Angular, Node.js</span></div>
+    <div class="skill">Databases<br><span>MySQL, MongoDB</span></div>
+  </div>
+</section>
+
+<section id="education" class="education">
+  <h2>Education</h2>
+
+  <div class="edu-card">
+
+    <h3>Diploma in Computer Technology</h3>
+    <p><b>K.K. Wagh Polytechnic, Nashik</b></p>
+
+    <h4>Semester Marks:</h4>
+    <ul class="marks-list">
+      <li>Semester 1: <b>85%</b></li>
+      <li>Semester 2: <b>89%</b></li>
+      <li>Semester 3: <b>91%</b></li>
+      <li>Semester 4: <b>92%</b></li>
+      <li>Semester 5: <b>97% </b></li>
+    </ul>
+
+    <h4>Best Scores:</h4>
+    <ul class="marks-list">
+      <li>PIC: <b>100 / 100</b></li>
+      <li>MIC: <b>100 / 100</b></li>
+      <li>DSU: <b>100 / 100</b></li>
+      <li>OOP: <b>100 / 100</b></li>
+      <li>JPR: <b>100 / 100</b></li>
+    </ul>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Featured Projects</h2>
+
+  <div class="project green">
+    <h3>Simple Calculator Android App</h3>
+    <p>A user-friendly Android application that performs basic arithmetic operations such as addition, subtraction, multiplication, and division with a clean and responsive interface.</p>
+    <span>Android · Java · XML</span>
+  </div>
+
+  <div class="project blue">
+    <h3>Real-Time Soil Monitoring & Alert System</h3>
+    <p>An IoT-based system that continuously monitors soil parameters such as moisture, temperature, and humidity, and sends real-time alerts to improve irrigation and crop management.</p>
+    <span>IoT · Sensors · Arduino · Cloud</span>
+  </div>
+
+ <div class="project purple">
+  <h3>Student Management System (Android App)</h3>
+
+  <p>
+    An Android-based mobile application designed to manage student records digitally. 
+    The app allows adding, updating, deleting, and viewing student details such as 
+    attendance, marks, and profiles. It provides a user-friendly interface for teachers 
+    and administrators with real-time database storage and secure login authentication.
+  </p>
+<br>
+  <span>Android · Java · XML · SQLite/Firebase</span>
+</div>
+
+
+  <div class="project red">
+    <h3>Dynamic Traffic Signal Management System</h3>
+    <p>An IoT-based system that dynamically controls traffic signals based on real-time traffic density, reducing congestion and improving road safety.</p>
+    <span>IoT · Sensors · Arduino · Embedded Systems</span>
+  </div>
+</section>
+
+<section class="section gray">
+  <h2>Professional Experience</h2>
+  <div class="card">
+    <h3>Intern – Software Development</h3>
+    <p>
+      During my internship, I worked on developing <strong>Android mobile applications</strong> and <strong>IoT-based systems</strong>. 
+      I gained hands-on experience in designing user-friendly mobile apps, integrating hardware sensors, and implementing real-time data monitoring and automation solutions.
+    </p>
+  </div>
+</section>
+
+
+
+<section class="section gray certificates">
+  <h2>Courses & Certifications</h2>
+
+  <div class="cert-grid">
+
+    <div class="cert-card">
+      <img src="mad.jpeg" alt="Android Certificate">
+      <h3>Android App Development</h3>
+      <p>Built multiple Android apps using Java, XML & SQLite.</p>
+    </div>
+
+    <div class="cert-card">
+      <img src="java.jpg" alt="Java Certificate">
+      <h3>Java Programming</h3>
+      <p>Core Java, OOP concepts and backend logic building.</p>
+    </div>
+
+
+<div class="cert-card">
+  <img src="itr.jpeg" alt="IoT with AI Certificate">
+  <h3>IoT with AI Integration</h3>
+  <p>
+    Designed smart systems by integrating IoT sensors with AI/ML models 
+    for automation, prediction, and real-time intelligent decision making.
+  </p>
+</div>
+
+
+<div class="cert-card">
+  <img src="bash.jpeg" alt="Bash Programming Certificate">
+  <h3>Bash & Linux Shell Programming</h3>
+  <p>
+    Learned Linux commands, shell scripting, automation tasks, 
+    and system administration using Bash scripting.
+  </p>
+</div>
+
+
+<div class="cert-card">
+  <img src="cpp.jpg" alt="OOP in C++ Certificate">
+  <h3>Object-Oriented Programming in C++</h3>
+  <p>
+    Implemented OOP concepts like classes, inheritance, polymorphism, 
+    and data structures using modern C++.
+  </p>
+</div>
+
+<!-- Certificate - Artificial Intelligence -->
+<div class="cert-card">
+  <img src="ai.jpeg" alt="Artificial Intelligence Certificate">
+  <h3>Artificial Intelligence & Machine Learning</h3>
+  <p>
+    Learned AI fundamentals, Machine Learning algorithms, data analysis, 
+    model training, and real-world applications using Python and TensorFlow.
+  </p>
+</div>
+
+
+
+
+  </div>
+</section>
+
+
+
+<div id="certModal" class="cert-modal">
+  <span class="close-modal">&times;</span>
+  <img id="certPreview">
+</div>
+
+
+
+<section class="section">
+  <h2>Let's Connect</h2>
+  <div class="contact-grid">
+    <div>
+  Email<br>
+  <span>
+    <a href="mailto:adityanavale@gmail.com?subject=Portfolio%20Contact&body=Hello%20Aditya," style="color:blue;">
+      adityanavale@gmail.com
+    </a>
+  </span>
+</div>
+
+    <div>
+  LinkedIn<br>
+  <span>
+    <a href="https://www.linkedin.com/in/aditya-navale-205092310" target="_blank" style="color:blue;">
+      linkedin.com/in/aditya
+    </a>
+  </span>
+</div>
+
+    <div>
+  GitHub<br>
+  <span>
+    <a href="https://www.linkedin.com/in/aditya-navale-205092310" target="_blank" style="color:blue;">
+      github.com/in/aditya
+    </a>
+  </span>
+</div>
+
+</section>
+
+<footer>
+  © 2026 ADITYA KISANRAO NAVALE
+</footer>
+
+<script src="scrpit.js"></script>
+</body>
+</html>
